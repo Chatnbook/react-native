@@ -557,7 +557,8 @@ public class ReactEditText extends EditText {
   @Override
   public void setBackgroundColor(int color) {
     if (color == Color.TRANSPARENT && mReactBackgroundDrawable == null) {
-      // don't do anything, no need to allocate ReactBackgroundDrawable for transparent background
+      // Reset background to nothing
+      super.setBackground(null);
     } else {
       getOrCreateReactViewBackground().setColor(color);
     }
