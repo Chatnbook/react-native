@@ -3088,7 +3088,7 @@ static void roundToPixelGrid(const YGNodeRef node) {
   }
 }
 
-void YGNodeCalculateLayout(const YGNodeRef node,
+bool YGNodeCalculateLayout(const YGNodeRef node,
                            const float availableWidth,
                            const float availableHeight,
                            const YGDirection parentDirection) {
@@ -3147,7 +3147,11 @@ void YGNodeCalculateLayout(const YGNodeRef node,
     if (gPrintTree) {
       YGNodePrint(node, YGPrintOptionsLayout | YGPrintOptionsChildren | YGPrintOptionsStyle);
     }
+
+    return true;
   }
+
+  return false;
 }
 
 void YGSetLogger(YGLogger logger) {

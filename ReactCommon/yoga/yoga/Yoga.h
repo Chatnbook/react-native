@@ -75,7 +75,7 @@ WIN_EXPORT YGNodeRef YGNodeGetChild(const YGNodeRef node, const uint32_t index);
 WIN_EXPORT YGNodeRef YGNodeGetParent(const YGNodeRef node);
 WIN_EXPORT uint32_t YGNodeGetChildCount(const YGNodeRef node);
 
-WIN_EXPORT void YGNodeCalculateLayout(const YGNodeRef node,
+WIN_EXPORT bool YGNodeCalculateLayout(const YGNodeRef node,
                                       const float availableWidth,
                                       const float availableHeight,
                                       const YGDirection parentDirection);
