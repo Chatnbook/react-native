@@ -56,6 +56,7 @@ const ReactNative = {
   get TabBarIOS() { return require('TabBarIOS'); },
   get Text() { return require('Text'); },
   get TextInput() { return require('TextInput'); },
+  get TextInputState() { return require('TextInputState'); },
   get ToastAndroid() { return require('ToastAndroid'); },
   get ToolbarAndroid() { return require('ToolbarAndroid'); },
   get Touchable() { return require('Touchable'); },
